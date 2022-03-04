@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema
 
-const BooksSchema = new Schema({
+const AuthorsSchema = new Schema({
   name: String,
-  genre: String,
+  age: Number,
   authorId: String
 })
 
 
-module.exports = mongoose.model('Book', BooksSchema)
+module.exports = mongoose.model('Author', AuthorsSchema)
